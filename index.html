@@ -365,12 +365,19 @@
                     </li>
                 </ul>
             </div>
-            <div>
-                <p>Subscribe</p>
-                <label>
-                    <input type="email">
-                </label>
-                <button class="form-btn btn" type="submit">Send</button>
+            <div class="footer-form">
+                <p class="footer-form-title">Subscribe</p>
+                <div class="footer-form-container">
+                    <label>
+                        <input class="footer-form-field" type="email" placeholder="E-mail">
+                    </label>
+                    <button class="footer-form-btn" type="submit">
+                        <p class="footer-form-btn-title ">Subscribe</p>
+                        <svg class="footer-form-btn-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-footer-btn-icon"></use>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </div>
     </footer>
@@ -412,7 +419,11 @@
                 <textarea class="form-comment" name="modal_comment" id="modal_comment" rows="6" placeholder="Text input"></textarea>
             
                 <label class="form-agreement">
-                    <input class="form-check-input" type="checkbox" name="modal_agreement" />
+                    <input class="form-check-input visually-hidden" type="checkbox" name="modal_agreement" />
+                    <svg class="form-custom-check" width="16" height="16">
+                      <use class="unchecked" href="./images/icons.svg#icon-unchecked"></use>
+                      <use class="checked" href="./images/icons.svg#icon-checked"></use>
+                    </svg>
                     <span class="form-agreement-text">I accept the terms and conditions of the
                         <a class="form-agreement-link" href="">Privacy Policy</a></span>
                 </label>
