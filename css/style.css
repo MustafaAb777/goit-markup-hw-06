@@ -314,9 +314,6 @@ button{
 }
 
 .team-section{
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
     padding: 120px 0;
 
     background-color: var(--color-cloud);
@@ -383,9 +380,6 @@ button{
 }
 
 .customers-section{
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -493,7 +487,6 @@ button{
 }
 
 .footer-form-title{
-    display: flex;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -506,6 +499,7 @@ button{
 
 .footer-form-container{
     display: flex;
+    gap: 24px;
 }
 
 .footer-form-field{
@@ -514,7 +508,6 @@ button{
     outline: transparent;
     background-color: transparent;
     padding-left: 16px;
-    margin-right: 24px;
 
     border-color: var(--color-white);
     border-radius: 4px;
@@ -589,7 +582,7 @@ button{
     letter-spacing: 0.04em;
     padding: 12px 24px;
     border-radius: 4px;
-    border-color: 1px solid var(--color-cornflower);
+    border: 1px solid #E7E9FC;;
     color: var(--color-iris);
     background-color: var(--color-cloud);
     transition: color var(--animation-speed), background-color var(--animation-speed), border-color var(--animation-speed), box-shadow var(--animation-speed);
@@ -708,6 +701,7 @@ button{
     min-height: 576px;
     top: 50%;
     left: 50%;
+    padding: 72px 24px 24px;
     background: var(--color-dairy);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -755,7 +749,6 @@ button{
 .modal-title{
     display: block;
     margin-bottom: 16px;
-    margin-top: 72px;
     text-align: center;
     font-family: 'Roboto';
     font-style: normal;
@@ -771,25 +764,20 @@ button{
 .form-label{
     display: block;
     margin-bottom: 4px;
-    margin-left: 24px;
-
     font-size: 12px;
     color: var(--color-light-slate);
-
 }
 
 .form-wrapper{
     position: relative;
     margin-bottom: 8px;
-
 }
 
 .form-field {
-    width: 360px;
+    width: 100%;
     height: 40px;
     padding: 0;
     padding-left: 38px;
-    margin-left: 24px;
     margin-right: 24px;
     
 
@@ -814,7 +802,7 @@ button{
 .form-icon{
     position: absolute;
     top: 50%;
-    left: 40px;
+    left: 16px;
     transform: translateY(-50%);
     pointer-events: none;
     fill: var(--color-navy-blue);
@@ -826,9 +814,8 @@ button{
 
 .form-comment{
     display: block;
-    width: 360px;
+    width: 100%;
     height: 120px;
-    margin-left: 24px;
     margin-bottom: 16px;
     padding-top: 8px;
     padding-left: 16px;
@@ -851,7 +838,6 @@ button{
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-left: 24px;
     margin-bottom: 24px;
 }
 
@@ -870,6 +856,10 @@ button{
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--color-light-slate);
+}
+
+.form-agreement-link{
+    color: var(--color-iris);
 }
 
 /* svg checkbox */
